@@ -1,0 +1,160 @@
+/* Reset CSS */
+/* Réinitialisation des styles CSS de base pour assurer une cohérence entre les navigateurs */
+
+* {
+  box-sizing: border-box; /* Inclure les marges et les paddings dans le calcul de la taille des éléments */
+  margin: 0; /* Supprimer les marges par défaut */
+  padding: 0; /* Supprimer les paddings par défaut */
+}
+
+/* Global Styles */
+/* Styles globaux s'appliquant à l'ensemble du document */
+
+body {
+  font-family: Arial, sans-serif; /* Utilisation de la police Arial ou sans-serif par défaut */
+  background-color: #0d0d0d; /* Couleur de fond du corps de la page */
+  color: white; /* Couleur du texte */
+}
+
+.container {
+  max-width: 1200px; /* Largeur maximale du conteneur */
+  margin: 0 auto; /* Centrer le conteneur horizontalement */
+  padding: 0 20px; /* Ajouter un padding sur les côtés du conteneur */
+}
+
+/* Header Styles */
+/* Styles spécifiques à l'en-tête de la page */
+
+header {
+  padding: 40px 0; /* Ajouter un padding en haut et en bas de l'en-tête */
+  text-align: center; /* Centrer le contenu de l'en-tête */
+  background-color: #ff6600; /* Couleur de fond de l'en-tête */
+}
+
+.header-container {
+  display: flex; /* Utiliser le modèle de boîte flexible pour le conteneur d'en-tête */
+  align-items: center; /* Aligner les éléments du conteneur verticalement au centre */
+  justify-content: center; /* Centrer les éléments horizontalement dans le conteneur */
+}
+
+.logo img {
+  height: 100px; /* Hauteur de l'image du logo */
+  width: 100px; /* Largeur de l'image du logo */
+  border-radius: 100%; /* Ajouter une bordure arrondie à l'image */
+}
+
+.title {
+  margin-left: 20px; /* Marge à gauche pour le titre */
+}
+
+.title h1 {
+  font-size: 36px; /* Taille de police du titre principal */
+  margin-bottom: 10px; /* Marge en bas du titre principal */
+}
+
+.title h2 {
+  font-size: 18px; /* Taille de police du sous-titre */
+}
+
+/* Section Styles */
+/* Styles pour les sections de contenu */
+
+section {
+  padding: 50px 0; /* Ajouter un padding en haut et en bas de la section */
+  text-align: center; /* Centrer le contenu de la section */
+}
+
+section h2 {
+  font-size: 24px; /* Taille de police des titres de section */
+  margin-bottom: 20px; /* Marge en bas des titres de section */
+}
+
+/* Form Styles */
+/* Styles pour les formulaires */
+
+form {
+  background-color: #23272f; /* Couleur de fond du formulaire */
+  padding: 20px; /* Ajouter un padding au formulaire */
+  border-radius: 10px; /* Ajouter une bordure arrondie au formulaire */
+  width: 80%; /* Largeur du formulaire */
+  max-width: 600px; /* Largeur maximale du formulaire */
+  margin: 0 auto; /* Centrer le formulaire horizontalement */
+}
+
+.input-container {
+  margin-bottom: 20px; /* Marge en bas des conteneurs d'entrée */
+}
+
+.input-container label {
+  display: block; /* Afficher les libellés des entrées en bloc */
+  margin-bottom: 5px; /* Marge en bas des libellés */
+  color: white; /* Couleur du texte des libellés */
+}
+
+.input-container input,
+.input-container select {
+  width: calc(100% - 20px); /* Largeur des champs de saisie et des sélecteurs */
+  padding: 10px; /* Ajouter un padding aux champs de saisie et aux sélecteurs */
+  border: none; /* Supprimer les bordures par défaut */
+  border-radius: 5px; /* Ajouter une bordure arrondie aux champs de saisie et aux sélecteurs */
+  background-color: #14161a; /* Couleur de fond des champs de saisie et des sélecteurs */
+  color: white; /* Couleur du texte des champs de saisie et des sélecteurs */
+  margin-top: 5px; /* Marge en haut des champs de saisie et des sélecteurs */
+}
+
+.input-container button {
+  width: calc(100% - 20px); /* Largeur des boutons */
+  padding: 10px; /* Ajouter un padding aux boutons */
+  border: none; /* Supprimer les bordures des boutons */
+  border-radius: 5px; /* Ajouter une bordure arrondie aux boutons */
+  background-color: #ff6600; /* Couleur de fond des boutons */
+  color: white; /* Couleur du texte des boutons */
+  cursor: pointer; /* Afficher un curseur pointeur au survol */
+  margin-top: 10px; /* Marge en haut des boutons */
+}
+
+.input-container button:hover {
+  background-color: #ff8000; /* Couleur de fond des boutons au survol */
+}
+
+/* Table Styles */
+/* Styles pour les tableaux */
+
+table {
+  width: 100%; /* Largeur totale du tableau */
+  border-collapse: collapse; /* Fusionner les bordures des cellules */
+  background-color: #23272f; /* Couleur de fond du tableau */
+  color: white; /* Couleur du texte du tableau */
+}
+
+table th,
+table td {
+  padding: 10px; /* Ajouter un padding aux cellules */
+  border-bottom: 1px solid #14161a; /* Ajouter une bordure en bas des cellules */
+}
+
+table th {
+  background-color: #14161a; /* Couleur de fond des en-têtes de colonne */
+}
+
+table thead tr:last-child th{
+  background-color: #ff8000; /* Couleur de fond de la dernière ligne de l'en-tête de colonne */
+}
+
+table tbody tr:last-child td {
+  border-bottom: none; /* Supprimer la bordure en bas de la dernière ligne du corps de tableau */
+}
+
+/* Footer Styles */
+/* Styles pour le pied de page */
+
+footer {
+  background-color: #0e1013; /* Couleur de fond du pied de page */
+  padding: 20px 0; /* Ajouter un padding en haut et en bas du pied de page */
+  text-align: center; /* Centrer le contenu du pied de page */
+  color: white; /* Couleur du texte du pied de page */
+}
+
+.legal {
+  font-size: 14px; /* Taille de police du texte légal */
+}
