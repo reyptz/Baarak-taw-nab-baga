@@ -34,7 +34,7 @@
             </div>
             <div class="input-container">
                 <label for="startDateInput"><i class="fas fa-calendar-day"></i> Date début :</label>
-                <input type="date" id="startDateInput">
+                <input type="datetime-local" id="startDateInput" >
             </div>
             <div class="input-container">
                 <label for="endDateInput"><i class="fas fa-calendar-day"></i> Date fin :</label>
@@ -87,6 +87,18 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Ajout d'un écouteur d'événement pour le formulaire
+        document.querySelector('form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Empêche la soumission du formulaire
+          
+          // Récupère la date et l'heure sélectionnées dans le champ input
+          var selectedDateTime = document.getElementById('datetime').value;
+          
+          // Affiche la date et l'heure sélectionnées
+          alert("Date et Heure Sélectionnées : " + selectedDateTime);
+        });
+      </script>
 </body>
 
 </html>
