@@ -34,7 +34,7 @@
             </div>
             <div class="input-container">
                 <label for="startDateInput"><i class="fas fa-calendar-day"></i> Date début :</label>
-                <input type="datetime-local" id="startDateInput" >
+                <input type="date" id="startDateInput" >
             </div>
             <div class="input-container">
                 <label for="endDateInput"><i class="fas fa-calendar-day"></i> Date fin :</label>
@@ -88,16 +88,42 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
     <script>
-        // Ajout d'un écouteur d'événement pour le formulaire
-        document.querySelector('form').addEventListener('submit', function(event) {
-          event.preventDefault(); // Empêche la soumission du formulaire
-          
-          // Récupère la date et l'heure sélectionnées dans le champ input
-          var selectedDateTime = document.getElementById('datetime').value;
-          
-          // Affiche la date et l'heure sélectionnées
-          alert("Date et Heure Sélectionnées : " + selectedDateTime);
-        });
+         // Récupère l'élément input startDateInput
+         var inputDate = document.getElementById('startDateInput');
+  
+         // Crée une nouvelle date
+         var currentDate = new Date();
+  
+         // Récupère l'année, le mois et le jour
+         var year = currentDate.getFullYear();
+         var month = ('0' + (currentDate.getMonth() + 1)).slice(-2);
+         var day = ('0' + currentDate.getDate()).slice(-2);
+  
+         // Formatte la date au format ISO (YYYY-MM-DD)
+         var today = year + '-' + month + '-' + day;
+  
+         // Assigner la date formatée à l'attribut value de l'input
+         inputDate.value = today;
+
+         // Récupère l'élément input endDateInput
+         var inputDate = document.getElementById('endDateInput');
+  
+         // Crée une nouvelle date
+         var currentDate = new Date();
+  
+         // Récupère l'année, le mois et le jour
+         var year = currentDate.getFullYear();
+         var month = ('0' + (currentDate.getMonth() + 1)).slice(-2);
+         var day = ('0' + currentDate.getDate()).slice(-2);
+  
+         // Formatte la date au format ISO (YYYY-MM-DD)
+         var today = year + '-' + month + '-' + day;
+  
+         // Assigner la date formatée à l'attribut value de l'input
+         inputDate.value = today;
+
+         // Assigner la date actuelle à l'attribut min de l'input (pour n'autoriser que les dates futures)
+         inputDate.min = today;
       </script>
 </body>
 

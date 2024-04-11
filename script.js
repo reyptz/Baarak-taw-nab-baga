@@ -53,8 +53,8 @@ $(document).ready(function(){
                                         <td>${task.endDate}</td>
                                         <td>${task.priority}</td>
                                         <td>${task.status}</td>
-                                        <td><button class="editBtn button" data-index="${index}">Modifier</button>
-                                        <br><button class="deleteBtn button" aria-label="Supprimer la tâche" data-index="${index}">Supprimer</button></br>
+                                        <td><button class="editBtn button" aria-label="Modifier la tâche" data-index="${index}"><i class="fas fa-edit" style='font-size:20px;color:green'></i> </button>
+                                        <br><button class="deleteBtn button" aria-label="Supprimer la tâche" data-index="${index}"><i class="fas fa-trash-alt" style='font-size:20px;color:red'></i> </button></br>
                                     </tr>`);
         });
     }
